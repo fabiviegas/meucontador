@@ -1,0 +1,31 @@
+// out: false
+
+@import "__pallete.less"; 
+
+.page__header {
+    position: absolute;
+    width: 100%;
+    z-index: 3000;
+    padding-top: 30px;
+
+    .social {
+        a {
+            .icon__social {
+                width: 30px;
+                margin-bottom: 22px;
+            }
+        }
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        a {
+            text-decoration: none;
+            font: 500 18px @fontS;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,269 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+body,
+h1,
+h2,
+h5,
+h6,
+figure,
+iframe {
+  margin: 0;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+iframe {
+  border: none;
+}
+mark {
+  padding: 0;
+  background-color: transparent;
+}
+menu {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+section,
+article,
+aside,
+details,
+figcaption,
+figure,
+header,
+footer,
+menu,
+nav {
+  display: block;
+}
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/leaguespartan/v6/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvM_oTpBA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/leaguespartan/v6/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvMzITpBA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/leaguespartan/v6/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvMIIPpBA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/leaguespartan/v6/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvMGYPpBA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v14/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA71rCosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v14/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA72jCosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v14/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA74TFosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v14/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA773Fosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v14/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA79rFosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/urbanist/v10/L0xtDF02iFML4hGCyMqgdyNEf6or5L2WA10pUpmv.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/urbanist/v10/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDlR4fFg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/urbanist/v10/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDyx4fFg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/urbanist/v10/L0xjDF02iFML4hGCyOCpRdycFsGxSrqD-R4fFg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/urbanist/v10/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDFRkfFg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/urbanist/v10/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDLBkfFg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/urbanist/v10/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDSxkfFg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/urbanist/v10/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDYhkfFg.ttf) format('truetype');
+}
+.button__whatsapp--floating {
+  display: inline-block;
+  z-index: 175;
+  position: fixed;
+  bottom: 5px;
+  right: 9px;
+  border-radius: 5px;
+  padding: 7px 12px;
+  background-color: #2acc1e;
+  color: #13172d;
+}
+.button__whatsapp--floating i {
+  font-size: 36px;
+  color: #191d36;
+}
+.button__whatsapp--floating .is--desktop {
+  display: none;
+}
+.button__whatsapp--floating:hover i {
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .button__whatsapp--floating {
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .button__whatsapp--floating .is--desktop {
+    display: inline-block;
+    padding-left: 10px;
+  }
+  .button__whatsapp--floating .is--desktop span {
+    display: block;
+    color: #13172d;
+    font: 500 11px SANS-SERIF;
+    text-transform: uppercase;
+    letter-spacing: -0.18px;
+  }
+  .button__whatsapp--floating .is--desktop span.sub {
+    font: 900 18px SANS-SERIF;
+    letter-spacing: 1.1px;
+  }
+}
+.page__header {
+  position: absolute;
+  width: 100%;
+  z-index: 3000;
+  padding-top: 30px;
+}
+.page__header .social a .icon__social {
+  width: 30px;
+  margin-bottom: 22px;
+}
+.page__header .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.page__header .links a {
+  text-decoration: none;
+  font: 500 18px 'Saira', sans-serif;
+  color: white;
+}
+.page__banner {
+  background-image: url('../img/bg-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+}
+.page__banner .banner__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page__banner .banner__content .logo__banner {
+  width: 400px;
+}
+.page__banner .banner__content h2 {
+  font: 600 32px 'League Spartan', sans-serif;
+  color: white;
+  letter-spacing: 3.2px;
+  max-width: 300px;
+  text-align: center;
+  line-height: 40px;
+}
+.page__banner .link__down {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
