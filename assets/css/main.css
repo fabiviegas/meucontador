@@ -10,7 +10,8 @@ h2,
 h5,
 h6,
 figure,
-iframe {
+iframe,
+p {
   margin: 0;
 }
 a {
@@ -266,4 +267,86 @@ nav {
   justify-content: center;
   margin-top: 48px;
   margin-bottom: 48px;
+}
+.page__cta {
+  background-image: url('../img/bg-atendimento.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 0 top -120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.page__cta .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page__cta .content h2 {
+  font: 700 26px 'Saira', sans-serif;
+  color: #ab0a0a;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.page__cta .content p {
+  font: 500 18px 'Saira', sans-serif;
+  color: black;
+  letter-spacing: 1.8px;
+}
+.page__cta .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page__cta .button a {
+  text-decoration: none;
+  color: #ab0a0a;
+  font: 700 32px 'League Spartan', sans-serif;
+  border: 3px solid #ab0a0a;
+  border-radius: 20px;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  background-color: white;
+}
+.page__cta .button a i {
+  font-size: 42px;
+  margin-right: 20px;
+}
+.page__cta .button a p {
+  margin-top: 8px;
+}
+.page__services {
+  background-color: #ab0a0a;
+  background-image: url('../img/bg-services.jpg');
+  background-repeat: no-repeat;
+  background-position: top 0 left 0;
+  padding-top: 70px;
+  padding-bottom: 22px;
+}
+.page__services h2 {
+  max-width: 278px;
+  font: 700 58px 'League Spartan', sans-serif;
+  color: white;
+  margin-top: 45px;
+  line-height: 60px;
+}
+.page__services .service {
+  display: flex;
+  align-items: center;
+  margin-left: 48px;
+  margin-bottom: 48px;
+}
+.page__services .service img {
+  margin-right: 25px;
+  width: 82px;
+}
+.page__services .service .service__text h3 {
+  font: 700 26px 'League Spartan', sans-serif;
+  color: white;
+}
+.page__services .service .service__text p {
+  font: 400 14px 'League Spartan', sans-serif;
+  color: white;
+  line-height: 20px;
 }

@@ -35,3 +35,102 @@
     }
 
 }
+
+.page__cta {
+    background-image: url('../img/bg-atendimento.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 0 top -120px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font: 700 26px @fontS;
+            color: rgb(171, 10, 10);
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font: 500 18px @fontS;
+            color: black;
+            letter-spacing: 1.8px;
+        }
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: rgb(171, 10, 10);
+            font: 700 32px @fontL;
+            border: 3px solid rgb(171, 10, 10);
+            border-radius: 20px;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            background-color: white;
+
+            i {
+                font-size: 42px;
+                margin-right: 20px;
+            }
+
+            p {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+.page__services {
+    background-color: rgb(171, 10, 10);
+    background-image: url('../img/bg-services.jpg');
+    background-repeat: no-repeat;
+    background-position: top 0 left 0;
+    padding-top: 70px;
+    padding-bottom: 22px;
+
+    h2 {
+        max-width: 278px;
+        font: 700 58px @fontL;
+        color: white;
+        margin-top: 45px;
+        line-height: 60px;
+    }
+
+    .service {
+        display: flex;
+        align-items: center;
+        margin-left: 48px;
+        margin-bottom: 48px;
+
+        img {
+            margin-right: 25px;
+            width: 82px;
+        }
+
+        .service__text {
+
+            h3 {
+                font: 700 26px @fontL;
+                color: white
+            }
+
+            p {
+                font: 400 14px @fontL;
+                color: white;
+                line-height: 20px;
+            }
+        }
+    }
+}
