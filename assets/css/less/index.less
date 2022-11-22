@@ -134,3 +134,127 @@
         }
     }
 }
+
+.page__about {
+    padding-top: 62px;
+    padding-bottom: 62px;
+    background-color: #FEFAF9;
+
+    h2 {
+        font: 700 58px @fontL;
+        color: rgb(171, 10, 10);
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    p {
+        color: #393636;
+        font: 400 22px @fontL;
+        margin-left: 125px;
+        line-height: 30px;
+        width: 350px;
+    }
+
+    .photo {
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 500px;
+        }
+    }
+}
+
+.page__contact {
+    background-image: url('../img/bg-contato.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 62px;
+    padding-bottom: 62px;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font: 800 50px @fontS;
+            color: rgb(171, 10, 10);
+            line-height: 35px;
+        }
+
+        p {
+            font: 500 26px @fontS;
+            color: black;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 48px;
+
+        a {
+            text-decoration: none;
+            background-color: rgb(171, 10, 10);
+            border-radius: 15px;
+            padding: 25px 40px;
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            font: 700 24px @fontL;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+
+    .title__contact {
+        border-top: 3px solid rgb(171, 10, 10);
+        
+        h3 {
+            padding-top: 48px;
+            font: 700 42px @fontL;
+            color: rgb(171, 10, 10);
+        }
+
+        p {
+            font: 400 16px @fontL;
+            color: black;
+            margin-bottom: 30px;
+        }   
+
+    }
+
+    input, textarea {
+        border: 1px solid #545454;
+        border-radius: 10px;
+        padding: 20px 30px;
+        font: 500 16px @fontS;
+        color: black;
+        margin-bottom: 20px;
+        width: 100%;
+        
+        &::placeholder {
+            font: 500 16px @fontS;
+            color: #545454;
+        }
+    }
+
+    button {
+        background-color: rgb(171, 10, 10);
+        border-radius: 15px;
+        padding: 25px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font: 700 24px @fontL;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        width: 100%;
+    }
+}
