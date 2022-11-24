@@ -14,6 +14,10 @@
                 width: 30px;
                 margin-bottom: 22px;
             }
+            
+            &:hover {
+                filter: brightness(0) saturate(100%) invert(80%) sepia(68%) saturate(416%) hue-rotate(345deg) brightness(103%) contrast(101%);
+            }
         }
     }
 
@@ -26,6 +30,11 @@
             text-decoration: none;
             font: 500 18px @fontS;
             color: white;
+
+            .--transition();
+            &:hover {
+                color: #FFDE59;
+            }
         }
     }
 }

@@ -14,7 +14,7 @@
         align-items: center;
 
         .logo__banner {
-            width: 400px;
+            width: 320px;
         }
 
         h2 {
@@ -32,6 +32,18 @@
         justify-content: center;
         margin-top: 48px;
         margin-bottom: 48px;
+
+        .arrow__down {
+            width: 35px;            
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            .arrow__down {
+                filter: brightness(0) saturate(100%) invert(80%) sepia(68%) saturate(416%) hue-rotate(345deg) brightness(103%) contrast(101%);
+            }
+        }
     }
 
 }
@@ -88,6 +100,11 @@
             p {
                 margin-top: 8px;
             }
+
+            .--transition();
+            &:hover {
+                background-color: #FFDE59; 
+            }
         }
     }
 }
@@ -136,6 +153,10 @@
 }
 
 .page__about {
+    background-image: url('../img/bg-about.svg');
+    background-repeat: no-repeat;
+    background-position: top -150px right -30px;
+    background-size: 800px;
     padding-top: 62px;
     padding-bottom: 62px;
     background-color: #FEFAF9;
@@ -208,6 +229,11 @@
             font: 700 24px @fontL;
             color: white;
             text-transform: uppercase;
+
+            .--transition();
+            &:hover {
+                color: #FFDE59;
+            }
         }
     }
 
@@ -221,7 +247,7 @@
         }
 
         p {
-            font: 400 16px @fontL;
+            font: 400 18px @fontL;
             color: black;
             margin-bottom: 30px;
         }   
@@ -256,5 +282,10 @@
         text-transform: uppercase;
         border: none;
         width: 100%;
+        
+        .--transition();
+        &:hover {
+            color: #FFDE59;
+        }
     }
 }
