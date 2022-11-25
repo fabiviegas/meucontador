@@ -196,30 +196,104 @@ nav {
   z-index: 3000;
   padding-top: 30px;
 }
-.page__header .social a {
-  transition: all 0.3s linear;
+.page__header .is--desktop {
+  display: none;
 }
-.page__header .social a .icon__social {
-  width: 30px;
-  margin-bottom: 22px;
-  filter: opacity(0.4);
+@media screen and (min-width: 768px) {
+  .page__header .is--desktop {
+    display: flex;
+  }
+  .page__header .is--desktop .social a {
+    transition: all 0.3s linear;
+  }
+  .page__header .is--desktop .social a .icon__social {
+    width: 30px;
+    margin-bottom: 22px;
+    filter: opacity(0.4);
+  }
+  .page__header .is--desktop .social a:hover .icon__social {
+    filter: opacity(1);
+  }
+  .page__header .is--desktop .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .page__header .is--desktop .links a {
+    text-decoration: none;
+    font: 500 18px 'Saira', sans-serif;
+    color: white;
+    transition: all 0.3s linear;
+  }
+  .page__header .is--desktop .links a:hover {
+    text-decoration: underline;
+  }
 }
-.page__header .social a:hover .icon__social {
-  filter: opacity(1);
-}
-.page__header .links {
+.page__header .is--mobile .navbar__hamburguer {
+  margin-right: 30px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-end;
 }
-.page__header .links a {
-  text-decoration: none;
-  font: 500 18px 'Saira', sans-serif;
+.page__header .is--mobile .navbar__hamburguer i {
   color: white;
-  transition: all 0.3s linear;
+  font-size: 30px;
 }
-.page__header .links a:hover {
-  text-decoration: underline;
+.page__header .is--mobile .navbar__overlay {
+  background-color: #092d23;
+  z-index: 3001;
+  display: none;
+}
+.page__header .is--mobile .navbar__overlay.open {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: hidden !important;
+  transition: all linear 0.5s;
+}
+.page__header .is--mobile .navbar__overlay.open .overlay__content {
+  overflow-y: auto !important;
+  height: 90%;
+}
+.page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__header {
+  margin: 30px 30px 106px 30px;
+}
+.page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__header .overlay__logo {
+  width: 155px;
+}
+.page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__header .overlay__close {
+  font-size: 30px;
+  color: white;
+}
+.page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu {
+  margin: 0;
+}
+.page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__links a {
+  font: 400 15px 'Saira', sans-serif;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 19px;
+}
+.page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__button {
+  margin-top: 40px;
+  margin-bottom: 76px;
+}
+.page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__social {
+  width: 130px;
+}
+.page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__social a {
+  text-decoration: none;
+  font-size: 23px;
+  color: #deb78f;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .page__header .is--mobile {
+    display: none;
+  }
 }
 .page__footer {
   background-color: #ab0a0a;
@@ -279,10 +353,10 @@ nav {
   width: 80px;
 }
 .page__banner {
-  background-image: url('../img/bg-banner.jpg');
+  background-image: url('../img/banner-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 150px;
+  padding-top: 70px;
 }
 .page__banner .banner__content {
   display: flex;
@@ -290,7 +364,12 @@ nav {
   align-items: center;
 }
 .page__banner .banner__content .logo__banner {
-  width: 320px;
+  width: 250px;
+}
+@media screen and (min-width: 768px) {
+  .page__banner .banner__content .logo__banner {
+    width: 320px;
+  }
 }
 .page__banner .banner__content h2 {
   font: 600 32px 'League Spartan', sans-serif;
@@ -311,6 +390,12 @@ nav {
 }
 .page__banner .link__down:hover {
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .page__banner {
+    background-image: url('../img/bg-banner.jpg');
+    padding-top: 150px;
+  }
 }
 .page__cta {
   background-image: url('../img/bg-atendimento.jpg');
