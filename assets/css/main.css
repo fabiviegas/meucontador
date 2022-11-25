@@ -196,12 +196,16 @@ nav {
   z-index: 3000;
   padding-top: 30px;
 }
+.page__header .social a {
+  transition: all 0.3s linear;
+}
 .page__header .social a .icon__social {
   width: 30px;
   margin-bottom: 22px;
+  filter: opacity(0.4);
 }
-.page__header .social a:hover {
-  filter: brightness(0) saturate(100%) invert(80%) sepia(68%) saturate(416%) hue-rotate(345deg) brightness(103%) contrast(101%);
+.page__header .social a:hover .icon__social {
+  filter: opacity(1);
 }
 .page__header .links {
   display: flex;
@@ -215,7 +219,7 @@ nav {
   transition: all 0.3s linear;
 }
 .page__header .links a:hover {
-  color: #FFDE59;
+  text-decoration: underline;
 }
 .page__footer {
   background-color: #ab0a0a;
@@ -243,7 +247,7 @@ nav {
   transition: all 0.3s linear;
 }
 .page__footer .nav a:hover {
-  color: #FFDE59;
+  text-decoration: underline;
 }
 .page__footer .social {
   display: flex;
@@ -253,12 +257,14 @@ nav {
 }
 .page__footer .social a {
   margin-bottom: 20px;
+  transition: all 0.3s linear;
 }
 .page__footer .social a img {
   width: 35px;
+  filter: opacity(0.4);
 }
-.page__footer .social a:hover {
-  filter: brightness(0) saturate(100%) invert(80%) sepia(68%) saturate(416%) hue-rotate(345deg) brightness(103%) contrast(101%);
+.page__footer .social a:hover .icon__social {
+  filter: opacity(1);
 }
 .page__footer .copyrights {
   margin-top: 30px;
@@ -305,9 +311,6 @@ nav {
 }
 .page__banner .link__down:hover {
   cursor: pointer;
-}
-.page__banner .link__down:hover .arrow__down {
-  filter: brightness(0) saturate(100%) invert(80%) sepia(68%) saturate(416%) hue-rotate(345deg) brightness(103%) contrast(101%);
 }
 .page__cta {
   background-image: url('../img/bg-atendimento.jpg');
@@ -359,7 +362,8 @@ nav {
   margin-top: 8px;
 }
 .page__cta .button a:hover {
-  background-color: #FFDE59;
+  background-color: #ab0a0a;
+  color: white;
 }
 .page__services {
   background-color: #ab0a0a;
@@ -467,7 +471,8 @@ nav {
   transition: all 0.3s linear;
 }
 .page__contact .button a:hover {
-  color: #FFDE59;
+  color: white;
+  background-color: #db0d0d;
 }
 .page__contact .title__contact {
   border-top: 3px solid #ab0a0a;
@@ -513,5 +518,6 @@ nav {
   transition: all 0.3s linear;
 }
 .page__contact button:hover {
-  color: #FFDE59;
+  color: white;
+  background-color: #db0d0d;
 }

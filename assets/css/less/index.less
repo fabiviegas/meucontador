@@ -38,11 +38,7 @@
         }
 
         &:hover {
-            cursor: pointer;
-
-            .arrow__down {
-                filter: brightness(0) saturate(100%) invert(80%) sepia(68%) saturate(416%) hue-rotate(345deg) brightness(103%) contrast(101%);
-            }
+            cursor: pointer;            
         }
     }
 
@@ -103,7 +99,8 @@
 
             .--transition();
             &:hover {
-                background-color: #FFDE59; 
+                background-color: rgb(171, 10, 10);
+                color: white;
             }
         }
     }
@@ -232,7 +229,8 @@
 
             .--transition();
             &:hover {
-                color: #FFDE59;
+                color: white;
+                background-color: lighten(rgb(171, 10, 10), 10%);
             }
         }
     }
@@ -285,7 +283,8 @@
         
         .--transition();
         &:hover {
-            color: #FFDE59;
+            color: white;
+            background-color: lighten(rgb(171, 10, 10), 10%);
         }
     }
 }

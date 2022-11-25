@@ -13,11 +13,16 @@
             .icon__social {
                 width: 30px;
                 margin-bottom: 22px;
+                filter: opacity(0.4);
+            }
+
+            .--transition();
+            &:hover {
+                .icon__social {
+                    filter: opacity(1);
+                }
             }
             
-            &:hover {
-                filter: brightness(0) saturate(100%) invert(80%) sepia(68%) saturate(416%) hue-rotate(345deg) brightness(103%) contrast(101%);
-            }
         }
     }
 
@@ -33,7 +38,7 @@
 
             .--transition();
             &:hover {
-                color: #FFDE59;
+                text-decoration: underline;
             }
         }
     }

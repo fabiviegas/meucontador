@@ -31,7 +31,7 @@
 
             .--transition();
             &:hover {
-                color: #FFDE59;
+                text-decoration: underline;
             }
         }
     }
@@ -47,11 +47,15 @@
 
             img {
                 width: 35px;
+                filter: opacity(0.4);
             }
             
+            .--transition();
             &:hover {
-                filter: brightness(0) saturate(100%) invert(80%) sepia(68%) saturate(416%) hue-rotate(345deg) brightness(103%) contrast(101%);
-            }            
+                .icon__social {
+                    filter: opacity(1);
+                }
+            }         
         }
     }
 
