@@ -239,7 +239,7 @@ nav {
   font-size: 30px;
 }
 .page__header .is--mobile .navbar__overlay {
-  background-color: #092d23;
+  background-color: #ab0a0a;
   z-index: 3001;
   display: none;
 }
@@ -259,10 +259,10 @@ nav {
   height: 90%;
 }
 .page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__header {
-  margin: 30px 30px 106px 30px;
+  margin: 0 30px 48px 30px;
 }
 .page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__header .overlay__logo {
-  width: 155px;
+  width: 130px;
 }
 .page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__header .overlay__close {
   font-size: 30px;
@@ -272,23 +272,44 @@ nav {
   margin: 0;
 }
 .page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__links a {
-  font: 400 15px 'Saira', sans-serif;
+  font: 400 18px 'Saira', sans-serif;
   color: white;
   text-decoration: none;
   margin-bottom: 19px;
 }
 .page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__button {
-  margin-top: 40px;
-  margin-bottom: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+.page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__button a {
+  text-decoration: none;
+  color: #ab0a0a;
+  font: 700 28px 'League Spartan', sans-serif;
+  border-radius: 20px;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  background-color: white;
+}
+.page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__button a i {
+  font-size: 36px;
+  margin-right: 15px;
+}
+.page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__button a p {
+  margin-top: 8px;
 }
 .page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__social {
-  width: 130px;
+  width: 165px;
+  margin-top: 30px;
 }
 .page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__social a {
   text-decoration: none;
-  font-size: 23px;
-  color: #deb78f;
-  cursor: pointer;
+}
+.page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__social a img {
+  width: 35px;
 }
 @media screen and (min-width: 768px) {
   .page__header .is--mobile {
