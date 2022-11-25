@@ -297,60 +297,141 @@ nav {
 }
 .page__footer {
   background-color: #ab0a0a;
-  padding-top: 62px;
+  padding-top: 48px;
   padding-bottom: 30px;
 }
-.page__footer .logo {
+.page__footer .is--desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .page__footer .is--desktop {
+    display: flex;
+  }
+  .page__footer .is--desktop .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .page__footer .is--desktop .logo .logo__footer {
+    width: 250px;
+  }
+  .page__footer .is--desktop .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .page__footer .is--desktop .nav a {
+    text-decoration: none;
+    font: 500 18px 'Saira', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    transition: all 0.3s linear;
+  }
+  .page__footer .is--desktop .nav a:hover {
+    text-decoration: underline;
+  }
+  .page__footer .is--desktop .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .page__footer .is--desktop .social a {
+    margin-bottom: 20px;
+    transition: all 0.3s linear;
+  }
+  .page__footer .is--desktop .social a img {
+    width: 35px;
+    filter: opacity(0.4);
+  }
+  .page__footer .is--desktop .social a:hover .icon__social {
+    filter: opacity(1);
+  }
+}
+.page__footer .is--mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page__footer .is--mobile .logo {
   display: flex;
   justify-content: center;
 }
-.page__footer .logo .logo__footer {
+.page__footer .is--mobile .logo .logo__footer {
   width: 250px;
 }
-.page__footer .nav {
+.page__footer .is--mobile .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 165px;
+  margin-bottom: 25px;
+}
+.page__footer .is--mobile .social a {
+  margin-bottom: 20px;
+}
+.page__footer .is--mobile .social a img {
+  width: 35px;
+}
+.page__footer .is--mobile .nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.page__footer .nav a {
+.page__footer .is--mobile .nav a {
   text-decoration: none;
   font: 500 18px 'Saira', sans-serif;
   color: white;
   margin-bottom: 20px;
+  text-align: center;
   transition: all 0.3s linear;
 }
-.page__footer .nav a:hover {
+.page__footer .is--mobile .nav a:hover {
   text-decoration: underline;
 }
-.page__footer .social {
+@media screen and (min-width: 768px) {
+  .page__footer .is--mobile {
+    display: none;
+  }
+}
+.page__footer .copyrights {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-.page__footer .social a {
-  margin-bottom: 20px;
-  transition: all 0.3s linear;
-}
-.page__footer .social a img {
-  width: 35px;
-  filter: opacity(0.4);
-}
-.page__footer .social a:hover .icon__social {
-  filter: opacity(1);
-}
-.page__footer .copyrights {
   margin-top: 30px;
   padding-top: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
   border-top: 1px solid white;
 }
 .page__footer .copyrights p {
   font: 400 16px 'Saira', sans-serif;
   color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .page__footer .copyrights p {
+    text-align: left;
+    margin-bottom: 0;
+  }
 }
 .page__footer .copyrights img {
   width: 80px;
+}
+@media screen and (min-width: 768px) {
+  .page__footer .copyrights {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page__footer {
+    padding-top: 62px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 .page__banner {
   background-image: url('../img/banner-mobile.png');
@@ -398,10 +479,10 @@ nav {
   }
 }
 .page__cta {
-  background-image: url('../img/bg-atendimento.jpg');
+  background-image: url('../img/bg-cta-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left 0 top -120px;
+  background-position: center center;
   padding-top: 48px;
   padding-bottom: 48px;
 }
@@ -415,11 +496,41 @@ nav {
   color: #ab0a0a;
   letter-spacing: 8px;
   text-transform: uppercase;
+  text-align: center;
+  border-bottom: 3px solid #ab0a0a;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .page__cta .content h2 {
+    text-align: left;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.page__cta .content .seta {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .page__cta .content .seta {
+    display: block;
+  }
 }
 .page__cta .content p {
   font: 500 18px 'Saira', sans-serif;
   color: black;
   letter-spacing: 1.8px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .page__cta .content p {
+    text-align: left;
+  }
 }
 .page__cta .button {
   display: flex;
@@ -429,7 +540,7 @@ nav {
 .page__cta .button a {
   text-decoration: none;
   color: #ab0a0a;
-  font: 700 32px 'League Spartan', sans-serif;
+  font: 700 28px 'League Spartan', sans-serif;
   border: 3px solid #ab0a0a;
   border-radius: 20px;
   padding: 15px 40px;
@@ -440,8 +551,8 @@ nav {
   transition: all 0.3s linear;
 }
 .page__cta .button a i {
-  font-size: 42px;
-  margin-right: 20px;
+  font-size: 36px;
+  margin-right: 15px;
 }
 .page__cta .button a p {
   margin-top: 8px;
@@ -450,75 +561,166 @@ nav {
   background-color: #ab0a0a;
   color: white;
 }
+@media screen and (min-width: 768px) {
+  .page__cta .button a {
+    font-size: 32px;
+  }
+  .page__cta .button a i {
+    font-size: 42px;
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page__cta {
+    background-image: url('../img/bg-cta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 0 top -120px;
+  }
+}
 .page__services {
   background-color: #ab0a0a;
   background-image: url('../img/bg-services.jpg');
   background-repeat: no-repeat;
-  background-position: top 0 left 0;
+  background-position: center center;
+  background-size: cover;
   padding-top: 70px;
   padding-bottom: 22px;
 }
 .page__services h2 {
-  max-width: 278px;
-  font: 700 58px 'League Spartan', sans-serif;
+  font: 700 48px 'League Spartan', sans-serif;
   color: white;
-  margin-top: 45px;
-  line-height: 60px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .page__services h2 {
+    font-size: 58px;
+    line-height: 60px;
+    margin-top: 45px;
+    text-align: left;
+    max-width: 278px;
+    margin-bottom: 0;
+  }
 }
 .page__services .service {
   display: flex;
   align-items: center;
-  margin-left: 48px;
-  margin-bottom: 48px;
+  margin-left: 15px;
+  margin-bottom: 30px;
 }
 .page__services .service img {
-  margin-right: 25px;
-  width: 82px;
+  margin-right: 15px;
+  width: 50px;
+}
+@media screen and (min-width: 768px) {
+  .page__services .service img {
+    margin-right: 25px;
+    width: 82px;
+  }
 }
 .page__services .service .service__text h3 {
-  font: 700 26px 'League Spartan', sans-serif;
+  font: 700 20px 'League Spartan', sans-serif;
   color: white;
+}
+@media screen and (min-width: 768px) {
+  .page__services .service .service__text h3 {
+    font-size: 26px;
+  }
 }
 .page__services .service .service__text p {
   font: 400 14px 'League Spartan', sans-serif;
   color: white;
   line-height: 20px;
 }
+@media screen and (min-width: 768px) {
+  .page__services .service {
+    margin-left: 48px;
+    margin-bottom: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page__services {
+    background-position: top 0 left 0;
+    background-size: auto;
+  }
+}
 .page__about {
   background-image: url('../img/bg-about.svg');
   background-repeat: no-repeat;
-  background-position: top -150px right -30px;
-  background-size: 800px;
-  padding-top: 62px;
-  padding-bottom: 62px;
+  background-position: top -50px left -30px;
+  background-size: 360px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   background-color: #FEFAF9;
 }
 .page__about h2 {
-  font: 700 58px 'League Spartan', sans-serif;
+  font: 700 48px 'League Spartan', sans-serif;
   color: #ab0a0a;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
 }
-.page__about p {
+@media screen and (min-width: 768px) {
+  .page__about h2 {
+    font-size: 58px;
+    margin-bottom: 48px;
+  }
+}
+.page__about .about__content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.page__about .about__content p {
   color: #393636;
-  font: 400 22px 'League Spartan', sans-serif;
-  margin-left: 125px;
-  line-height: 30px;
-  width: 350px;
+  font: 400 20px 'League Spartan', sans-serif;
+  line-height: 25px;
+  text-align: center;
 }
-.page__about .photo {
+@media screen and (min-width: 768px) {
+  .page__about .about__content p {
+    margin-left: 125px;
+    font-size: 24px;
+    line-height: 30px;
+    width: 350px;
+    text-align: left;
+  }
+}
+.page__about .about__content .photo {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
-.page__about .photo img {
-  max-width: 500px;
+.page__about .about__content .photo img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .page__about .about__content .photo {
+    margin-bottom: 0;
+  }
+  .page__about .about__content .photo img {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page__about .about__content {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page__about {
+    background-position: top -150px right -30px;
+    background-size: 800px;
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
 }
 .page__contact {
-  background-image: url('../img/bg-contato.jpg');
+  background-image: url('../img/bg-contato-mobile.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 62px;
-  padding-bottom: 62px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .page__contact .text {
   display: flex;
@@ -528,13 +730,19 @@ nav {
 .page__contact .text h2 {
   font: 800 50px 'Saira', sans-serif;
   color: #ab0a0a;
-  line-height: 35px;
+  line-height: 45px;
 }
 .page__contact .text p {
   font: 500 26px 'Saira', sans-serif;
   color: black;
   letter-spacing: 8px;
   text-transform: uppercase;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .page__contact .text p {
+    margin-bottom: 0;
+  }
 }
 .page__contact .button {
   display: flex;
@@ -561,16 +769,36 @@ nav {
 }
 .page__contact .title__contact {
   border-top: 3px solid #ab0a0a;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .page__contact .title__contact h3 {
   padding-top: 48px;
   font: 700 42px 'League Spartan', sans-serif;
   color: #ab0a0a;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .page__contact .title__contact h3 {
+    text-align: left;
+  }
 }
 .page__contact .title__contact p {
   font: 400 18px 'League Spartan', sans-serif;
   color: black;
   margin-bottom: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .page__contact .title__contact p {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page__contact .title__contact {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .page__contact input,
 .page__contact textarea {
@@ -605,4 +833,12 @@ nav {
 .page__contact button:hover {
   color: white;
   background-color: #db0d0d;
+}
+@media screen and (min-width: 768px) {
+  .page__contact {
+    background-image: url('../img/bg-contato.jpg');
+    background-size: cover;
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
 }
