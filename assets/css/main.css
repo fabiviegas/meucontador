@@ -230,7 +230,7 @@ nav {
   }
 }
 .page__header .is--mobile .navbar__hamburguer {
-  margin-right: 30px;
+  margin-right: 15px;
   display: flex;
   justify-content: flex-end;
 }
@@ -259,10 +259,10 @@ nav {
   height: 90%;
 }
 .page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__header {
-  margin: 0 30px 48px 30px;
+  margin: 20px 30px 48px 30px;
 }
 .page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__header .overlay__logo {
-  width: 130px;
+  width: 110px;
 }
 .page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__header .overlay__close {
   font-size: 30px;
