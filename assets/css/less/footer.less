@@ -133,7 +133,7 @@
         margin-left: 30px;
         border-top: 1px solid white;
 
-        p {
+        .copyrights__customer {
             font: 400 16px @fontS;
             color: white;
             text-align: center;
@@ -143,15 +143,51 @@
                 text-align: left;
                 margin-bottom: 0;
             }
-        }
+        }   
+        
+        .copyrights__fabi {
 
-        img {
-            width: 80px;
+            p {
+                font: 400 16px @fontS;
+                color: white;
+                text-align: center;
+                margin-bottom: 6px;
+    
+                @media screen and (min-width: 768px) {
+                    text-align: left;
+                    margin-bottom: 0;
+                } 
+            }
+        
+            .fabi {
+                font: 500 18px @fontS;
+                color: white;
+
+                &:hover {
+                    color: white;
+                    text-decoration: underline;
+                    text-underline-offset: 4px;
+                }
+            }
         }
 
         @media screen and (min-width: 768px) {
             flex-direction: row;
-            justify-content: flex-end;            
+            align-items: center;
+            justify-content: space-between;
+
+            .copyrights__fabi {
+                display: flex;
+                align-items: flex-end;
+
+                p {
+                    margin-bottom: 0;
+                }
+
+                .fabi {
+                    margin-left: 10px;
+                }
+            }
         }
     }
 

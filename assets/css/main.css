@@ -57,28 +57,28 @@ nav {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/leaguespartan/v6/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvM_oTpBA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/leaguespartan/v11/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvM_oTpBA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'League Spartan';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/leaguespartan/v6/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvMzITpBA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/leaguespartan/v11/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvMzITpBA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'League Spartan';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/leaguespartan/v6/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvMIIPpBA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/leaguespartan/v11/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvMIIPpBA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'League Spartan';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/leaguespartan/v6/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvMGYPpBA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/leaguespartan/v11/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvMGYPpBA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Saira';
@@ -426,25 +426,54 @@ nav {
   margin-left: 30px;
   border-top: 1px solid white;
 }
-.page__footer .copyrights p {
+.page__footer .copyrights .copyrights__customer {
   font: 400 16px 'Saira', sans-serif;
   color: white;
   text-align: center;
   margin-bottom: 15px;
 }
 @media screen and (min-width: 768px) {
-  .page__footer .copyrights p {
+  .page__footer .copyrights .copyrights__customer {
     text-align: left;
     margin-bottom: 0;
   }
 }
-.page__footer .copyrights img {
-  width: 80px;
+.page__footer .copyrights .copyrights__fabi p {
+  font: 400 16px 'Saira', sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 6px;
+}
+@media screen and (min-width: 768px) {
+  .page__footer .copyrights .copyrights__fabi p {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+.page__footer .copyrights .copyrights__fabi .fabi {
+  font: 500 18px 'Saira', sans-serif;
+  color: white;
+}
+.page__footer .copyrights .copyrights__fabi .fabi:hover {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 @media screen and (min-width: 768px) {
   .page__footer .copyrights {
     flex-direction: row;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .page__footer .copyrights .copyrights__fabi {
+    display: flex;
+    align-items: flex-end;
+  }
+  .page__footer .copyrights .copyrights__fabi p {
+    margin-bottom: 0;
+  }
+  .page__footer .copyrights .copyrights__fabi .fabi {
+    margin-left: 10px;
   }
 }
 @media screen and (min-width: 768px) {
